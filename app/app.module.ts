@@ -14,6 +14,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListingComponent } from './components/listing/listing.component';
 import { AddListingComponent } from './components/add-listing/add-listing.component';
 import { EditListingComponent } from './components/edit-listing/edit-listing.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCCL85EytjV5nsYkPUapIa3xvTOBfC2DQg",
@@ -33,7 +34,9 @@ const appRoutes: Routes = [
   {path:'', component:HomeComponent},
   {path: 'listings', component:ListingsComponent},
   {path:'listing/:id', component:ListingComponent},
-  {path: 'add-listing', component:AddListingComponent}
+  // {path:'listing', component:ListingComponent},
+  {path: 'add-listing', component:AddListingComponent},
+  {path: 'edit-listing', component:EditListingComponent}
 ]
 
 @NgModule({
@@ -44,7 +47,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     ListingComponent,
     AddListingComponent,
-    EditListingComponent
+    EditListingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

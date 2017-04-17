@@ -22,13 +22,13 @@ export class ListingComponent implements OnInit {
   ) { 
     this.af.auth.subscribe(auth => {
      //Here you get the user information
-     console.log("My auth : "+auth.uid);
+    //  console.log("My auth : "+auth.uid);
     })
   }
 
   ngOnInit() {
     // Get ID
-    this.id = this.route.snapshot.params['id'];
+    this.id = "-Kdl_wRRkn7nJxgz4B54"//this.route.snapshot.params['id'];
 
     this.firebaseService.getListingDetails(this.id).subscribe(listing => {
       this.listing = listing;
