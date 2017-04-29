@@ -14,6 +14,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListingComponent } from './components/listing/listing.component';
 import { AddListingComponent } from './components/add-listing/add-listing.component';
 import { EditListingComponent } from './components/edit-listing/edit-listing.component';
+import { AddlistingComponent } from './components/addlisting/addlisting.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 export const firebaseConfig = {
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
   {path:'listing/:id', component:ListingComponent},
   // {path:'listing', component:ListingComponent},
   {path: 'add-listing', component:AddListingComponent},
+  {path: 'addlisting', component:AddlistingComponent},
   {path: 'edit-listing', component:EditListingComponent}
 ]
 
@@ -47,6 +49,7 @@ const appRoutes: Routes = [
     NavbarComponent,
     ListingComponent,
     AddListingComponent,
+    AddlistingComponent,
     EditListingComponent,
     FooterComponent
   ],
